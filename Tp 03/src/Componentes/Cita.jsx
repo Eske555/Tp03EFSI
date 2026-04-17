@@ -1,8 +1,4 @@
-import DetalleCita from "./DetalleCita";
-import Boton from "./Boton";
-import "./Cita.css";
-
-function Cita({ mascota, dueno, fecha, hora, sintomas }) {
+function Cita({ mascota, dueno, fecha, hora, sintomas, onEliminar }) {
   return (
     <div className="cita">
       <DetalleCita etiqueta="Mascota" valor={mascota} />
@@ -11,9 +7,11 @@ function Cita({ mascota, dueno, fecha, hora, sintomas }) {
       <DetalleCita etiqueta="Hora" valor={hora} />
       <DetalleCita etiqueta="Sintomas" valor={sintomas} />
 
-      <Boton texto="Eliminar ×" clase="button eliminar u-full-width" />
+      <Boton
+        texto="Eliminar ×"
+        clase="button eliminar u-full-width"
+        onClick={onEliminar}
+      />
     </div>
   );
 }
-
-export default Cita;
