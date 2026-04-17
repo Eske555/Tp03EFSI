@@ -40,10 +40,9 @@ function Formulario({ setCitas }) {
 
       <form onSubmit={handleSubmit}>
         <Input label="Nombre Mascota" name="mascota" value={form.mascota} onChange={handleChange} />
-        <Input label="Nombre Dueño" name="dueno" value={form.dueno} onChange={handleChange} />
-        <Input label="Fecha" name="fecha" tipo="date" value={form.fecha} onChange={handleChange} />
-        <Input label="Hora" name="hora" tipo="time" value={form.hora} onChange={handleChange} />
-        <Input label="Sintomas" name="sintomas" tipo="textarea" value={form.sintomas} onChange={handleChange} />
+        <Input label="Nombre Dueño" name="dueno" placeholder="Nombre dueño de la mascota" value={form.dueno} onChange={handleChange} />        <Input label="Fecha" name="fecha" tipo="date" value={form.fecha} onChange={handleChange} />
+        <Input label="hora" name="hora" tipo="time" value={form.hora} onChange={handleChange} />
+        <Input label="Sintomas" name="sintomas" tipo="textarea" placeholder="" value={form.sintomas} onChange={handleChange} />
 
         <Boton texto="Agregar Cita" tipo="submit" clase="u-full-width button-primary" />
       </form>

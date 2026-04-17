@@ -1,3 +1,7 @@
+import DetalleCita from "./DetalleCita";
+import Boton from "./Boton";
+import "./Cita.css";
+
 function Cita({ mascota, dueno, fecha, hora, sintomas, onEliminar }) {
   return (
     <div className="cita">
@@ -15,3 +19,5 @@ function Cita({ mascota, dueno, fecha, hora, sintomas, onEliminar }) {
     </div>
   );
 }
+
+export default Cita;
